@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: #0f0e17;
+        }
+
+        .heading {
+            text-align: center;
+            
+            color: #fffffe;
+            font-size: 45px;
+
+
+        }
+
+        .heading-secondary {
+            text-align: center;
+            color: #f25f4c;
+            font-size: 40px;
+        }
+
+        .img-text {
+            color: #ff8906;
+            left: 40px;
+            position: relative;
+            font-size: 25px;
+            margin-top: 10px;
+
+
+        }
+
+        .div-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .div-img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px 1px #ff8906;
+
+        }
+       
+       
+
+        /*Mobile Device*/
+        @media screen and (max-width: 500px) {
+            .heading {
+                font-size: 30px;
+            }
+
+            .img {
+                height: 200px;
+                width: 500px;
+            }
+
+            .heading-secondary {
+                font-size: 25px;
+            }
+
+            .div-container {
+                flex-wrap: wrap;
+                flex-direction: column;
+                position: relative;
+                left: 150px;
+
+            }
+
+            .img-text {
+                font-size: 20px;
+
+            }
+
+
+
+
+        }
+
+        /*Tablet Device*/
+        @media screen and (min-width: 501px) and (max-width: 768px) {
+            .heading {
+                font-size: 40px;
+            }
+
+            .img {
+                height: 250px;
+                width: 753px;
+            }
+
+            .heading-secondary {
+                font-size: 35px;
+            }
+
+            .div-container {
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+
+            .div-img {
+                height: 110px;
+                width: 110px;
+            }
+
+            .img-text {
+                font-size: 18px;
+                left: 30px;
+            }
+
+        }
+
+        /*Desktop Device*/
+        @media screen and (min-width: 769px) {}
+    </style>
+</head>
+
+<body>
+
+    <h1 class="heading">HOME SALOON</h1>
+    <hr>
+    <div>
+        <img src="home-saloon.webp" class="img">
+    </div>
+    <h1 class="heading-secondary"> What are you looking for, Bestie? 👀</h1>
+
+    <div class="div-container">
+        <div>
+            <img src="facial-img.webp" class="div-img">
+            <p class="img-text">Facial</p>
+
+        </div>
+        <div>
+            <img src="clean-up.webp" class="div-img">
+            <p class="img-text">Clean up</p>
+
+        </div>
+
+        <div>
+            <img src="detan.webp" class="div-img">
+            <p class="img-text">De-Tan</p>
+
+        </div>
+
+        <div>
+            <img src="make-up.webp" class="div-img">
+            <p class="img-text">Make-Up</p>
+
+        </div>
+
+        <div>
+            <img src="nail-art.webp" class="div-img">
+            <p class="img-text">Nail Art</p>
+
+        </div>
+    </div>
+
+  
+
+</body>
+
+</html>
